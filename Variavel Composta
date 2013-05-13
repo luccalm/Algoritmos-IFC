@@ -1,0 +1,33 @@
+Variáveis Compostas Heterogêneas – Registros
+
+É composto por campos que são partes que especificam cada uma das informações que o compõe. Uma variável do tipo registro é uma variável composta pois engloba m conjunto de dados e é heterogênea pois cada campo pode ser de um tipo primitivo diferente. 
+
+Exemplo pasagem de ônibus:
+
+Número da passagem: _____________________ Data: ____________________________
+De: ____________________________________ Para: ____________________________
+Horário: _______________ Poltrona: ___________________ Idade: _________________
+Nome passageiro: __________________________________________________________
+
+
+Declaração de registro:
+
+	typedef struct sPassagem {
+		int nPassagem, data, horario, poltrona, idade;
+		char de[30], para[30], nome[50]
+	} Passagem;
+
+Declaração de variável do tipo do registro:
+
+Passagem pMunicipal => struct sPassagem pMunicipal;
+
+Manipulação: (Exemplos)
+	pMunicipal.nPassagem = 152;
+	pMunicipal.data = 12052013;
+  scanf("%d", &pMunicipal.idade);
+  printf("%s", pMunicipal.nome);
+
+Também pode ser declaração ou manipulação como um vetor.
+Passagem pMunicipal[TAM];
+	
+
