@@ -19,12 +19,15 @@ int main(){
 
 	//para carregar um registro
 	printf("Digite o nome do cliente:");
-	scanf("%c", &pDados.nome);
+	scanf("%s", &pDados.nome);
 	
 	printf("Digite o endereço do cliente:");
-	scanf("%c", &pDados.endereco);
+	scanf("%s", &pDados.endereco);
 	
 	//getchar(pMunicipal.data);
+	
+	printf("Digite a data de nascimento:");
+	scanf("%d", &pDados.nascimento);
 	
 	printf("Digite o RG do cliente: ");
 	scanf("%d", &pDados.rg);
@@ -33,9 +36,9 @@ int main(){
 	scanf("%d", &pDados.cpf);
 
 	//Para mostrar um registro
-	printf("Nome: %c  Data de nascimento: %d\n", pDados.nome, pDados.nascimento);
+	printf("Nome: %s  Data de nascimento: %d \n", pDados.nome, pDados.nascimento);
 	printf("Endereço: %s  \n", pDados.endereco);
-	printf("RG: %d  CPF: %d  RG: %d\n", pDados.cpf, pDados.rg);
+	printf("RG: %d  CPF: %d", pDados.cpf, pDados.rg);
 	
 
 	return 0;
