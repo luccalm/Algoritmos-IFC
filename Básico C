@@ -1,0 +1,139 @@
+Comandos básicos do C
+
+leia() => scanf()
+
+Sintaxe:
+
+scanf("%d", &variável);
+%d => mascara do tipo de dado
+&variável => variável a ser lida
+
+escreva() => printf()
+
+Sintaxe:
+
+printf("mensagem: %d - %f",variavel1, variavel2);
+
+Máscara de dados
+
+%i = inteiro simples
+%d = inteiro duplo
+%f = real
+%c = caracter (1 único caracter)
+%s = string (+ de um caracter)
+
+
+Condicional Se/Senão = if/else
+
+sintaxe:
+
+if( a > b) {
+
+comandos;
+
+} else {
+
+comandos;
+
+}
+
+Condicional Escolha
+
+switch (variavel) {
+
+case 1:
+
+comandos;
+break;
+
+case 2:
+
+comandos;
+break;
+
+default:
+
+comandos;
+break;
+
+}
+
+
+Estrutura de repetição enquanto
+
+
+sintaxe:
+
+
+while (a > b) {
+
+comando;
+
+}
+
+Estrutura de repetição repita
+
+sintaxe
+
+do {
+
+comandos;
+
+} while(a>b);
+
+
+
+Estrutura de repetição para-faça
+
+Sintaxe:
+
+for(inicialização; teste de parada; incremento de variavel) 
+
+
+for(i = 0; i < 20; i++) {
+
+comando;
+
+}
+
+
+Tipos de Dados
+
+Inteiro = int
+real = float
+Caracter = char
+lógico = int => int com dois valores (0 e 1)
+
+Operadores
+
+div = div() => div(a,b);
+mod = % => a%b
+
+*, /, -, +
+rad() => sqrt();
+pot() => pow(a, b); => pow(base, expoente);
+
+Obs: Algumas operações matemáticas necessitam da biblioteca <math.h>
+
+Operadores Lógicos
+
+! => Não
+&& => e (dois e comercial);
+|| => ou (dois pipes)
+
+
+Estrutura básica de programação C
+
+//Isto é um comentário
+
+// bibliotecas do sistema
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+
+
+return 0;
+
+}
