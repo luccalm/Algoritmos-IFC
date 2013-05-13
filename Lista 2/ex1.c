@@ -26,7 +26,7 @@ int main(){
 	num1 = num2;
 	num2 = num3;
 	n--;
-	printf("%d", num3);
+	printf("[%d]", num3);
 	}
 	
 

@@ -14,7 +14,7 @@
 
 
 int main(){
-	int num1, n=0;
+	int num1, n=2;
 
 
 	printf("Digite um número: ");
@@ -24,9 +24,9 @@ int main(){
 	{
 		if(num1 % n == 0)
 		{
-		printf("%d", n);
-		n++;
-		}		
+		printf("[%d]", n);
+		}
+	n++;		
 	}
 	
 	
