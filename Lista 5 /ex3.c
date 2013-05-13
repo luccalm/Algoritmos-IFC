@@ -15,20 +15,20 @@ int A[10], B[10], C[10], i;
 
 for(i = 0; i < 10; i++)
 	{
-	printf("Digite a posição nº %d do primeiro vetor:", i);
+	printf("Digite a posição nº %d do primeiro vetor:", i+1);
 	scanf("%d", &A[i]);
 	}
 	
 for(i = 0; i < 10; i++)
 	{
-	printf("Digite a posição nº %d do segundo vetor:", i);
+	printf("Digite a posição nº %d do segundo vetor:", i+1);
 	scanf("%d", &B[i]);
 	C[i] = A[i] * B[i];
 	}
 
 for(i = 0; i < 10; i++)
 	{
-	printf("Valor da posição nº %d da multiplicação de A[%d] por B[%d] é %d\n", i, i, i, C[i]);	
+	printf("Valor da posição nº %d da multiplicação de A[%d] por B[%d] é %d\n", i+1, i+1, i+1, C[i]);	
 	}
 
 return 0;

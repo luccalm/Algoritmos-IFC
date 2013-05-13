@@ -7,13 +7,13 @@ quantos valores pares existem no vetor. */
 
 int main(){
 
-int A[20], i, b = 05;
+int A[20], i, b = 0;
 
 // Declaração valores:
 
-for(i = 0; i < 5; i++)
+for(i = 0; i < 20; i++)
 	{
-	printf("Digite a posição nº [%d] do vetor:", i);
+	printf("Digite a posição nº [%d] do vetor:", i+1);
 	scanf("%d", &A[i]);
 		if(A[i] % 2 == 0)
 			{

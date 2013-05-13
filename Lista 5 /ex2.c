@@ -8,7 +8,7 @@ vetor N e a sua posição dentro do vetor, mostrando: “O menor elemento de N �
  
 int main(){
 
-int N[20], i, menor;
+int N[20], i, menor, posicao;
 
 // Declaração valores:
 
@@ -27,10 +27,11 @@ for(i = 0; i < 20; i++)
 	if(N[i] < menor)
 		{
 		menor = N[i];
+		posicao = i;
 		}	
 	}
 	
-printf("Menor número é: %d está na posição %d \n", menor, i);
+printf("Menor número é: %d está na posição %d \n", menor, posicao);
 
 
 return 0;
