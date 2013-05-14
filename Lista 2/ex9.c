@@ -7,27 +7,30 @@ do peso. IMC = peso/altura2 IMC <=18,5
 */
 
 int main(){
-	int peso, i;
-	float altura, imc, IMC;
+	int peso, i, abaixo;
+	float altura, imc, IMC = (18,5);
 
-		for(i = 0; i < 20; i++){
-		printf("Digite o peso em quilos ");
+
+		for(i = 0; i < 2; i++){
+		printf("Digite o peso da %d pessoa em quilos", i+1);
 		scanf("%d", &peso);
 	
-		printf("Digite a sua altura em metros: ");
+		printf("Digite a altura da primeira pessoa em metros:", i+1);
 		scanf("%f", &altura);
 	
 		imc = (peso / (altura*altura));
-		IMC = 18,5;
 			if(imc < IMC)
 				{
-				printf("A pessoa %d está abaixo do peso. \n" ,i+1);
+				abaixo++;
 				}
-			else
-				{
-				printf("A pessoa %d está acima do peso. \n" , i+1);
-				}
-		}
-		
+			
+			// Exatamente 1 pessoa:
+							}
+		if(abaixo == 1) { printf("%d pessoa está abaixo do peso.", abaixo); }
+			
+			// Mais que 1 pessoa:
+
+			printf("%d pessoas estão abaixo do peso", abaixo);
+
 return 0;
 }
