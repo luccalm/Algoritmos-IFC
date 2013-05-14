@@ -7,7 +7,7 @@ qual o percentual de ruivas existente. */
 #include <math.h>
 
 int main(){
-	int nPessoas, nSexo, nCabelo, i, nRuiva = 0;
+	int nPessoas, nSexo, nCabelo, i, nRuiva = 0, nPorcent;
 	
 
 	printf("Digite a quantidade de pessoas:");
@@ -25,8 +25,10 @@ int main(){
 					nRuiva++;
 				}
 
+			nPorcent = (nRuiva * 100) / nPessoas;
+
 		}
-		printf("Existem %d ruivas de um total de %d pessoas.", nRuiva, nPessoas);
+		printf("Existem %d ruivas de um total de %d pessoas. O que representa %d porcento.", nRuiva, nPessoas, nPorcent);
 
 return 0;
 }
