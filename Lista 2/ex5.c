@@ -12,7 +12,7 @@ int S[20], MULT[20], A, i;
 
 for(i = 0; i < 20; i++)
 	{
-	printf("Digite a posição %d do vetor S[20]:" , i);	
+	printf("Digite a posição %d do vetor S[20]:" , i+1);	
 	scanf("%d", &S[i]);
 	}
 
@@ -22,7 +22,7 @@ for(i = 0; i < 20; i++)
 for(i = 0; i < 20; i++)
 	{
 	MULT[i] = S[i] * A;
-	printf("Multiplicação da posição S[%d] pela variável %d: %d \n", i, A, MULT[i]);	
+	printf("Multiplicação da posição S[%d] pela variável %d: %d \n", i+1, A, MULT[i]);	
 	}
 
 
