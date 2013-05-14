@@ -6,14 +6,16 @@ que Polegada = Centímetro * 2,54. */
 #include <math.h>
 
 int main(){
-	float nConv = (2,54);
-	int i, nPolegada;
+	float nConv, nPolegada;
+	int i;
+
+	nConv = 2.54;
 
 	for(i = 1; i <= 20; i++)
 		{
 			//soma = ((float) i / multi) + soma;
-			nPolegada = i * nConv; 
-			printf("%d polegadas em centimetros são: %d cm \n", i, nPolegada);
+			nPolegada = (float)i * nConv; 
+			printf("%d polegadas em centimetros são: %.2f cm \n", i, nPolegada);
 		}	
 
 return 0;

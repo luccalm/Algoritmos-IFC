@@ -6,15 +6,17 @@ números. */
 #include <math.h>
 
 int main(){
-	int nNumero, qnt, soma = 0;
+	int nNumero, qnt = 0, soma = 0;
 	
-
+		printf("Digite um número:");
+		scanf("%d", &nNumero);	
 		while(nNumero != -1)
 		{
-			printf("Digite um número:");
-			scanf("%d", &nNumero);	
+		
 			soma = soma + nNumero;
 			qnt++;
+			printf("Digite um número:");
+			scanf("%d", &nNumero);		
 		} 
 
 		printf("A soma dos números é %d. A quantidade é %d \n", soma, qnt);
