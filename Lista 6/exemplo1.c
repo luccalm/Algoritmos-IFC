@@ -9,9 +9,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct sDados{
-	int nascimento, rg, cpf;
-	char nome[50], endereco[50];
+typedef struct sDados {
+	char nome[50], endereco[50], nascimento[50], rg[50], cpf[50];
 } Dados;
 
 int main(){
@@ -19,26 +18,25 @@ int main(){
 
 	//para carregar um registro
 	printf("Digite o nome do cliente:");
-	scanf("%s", &pDados.nome);
-	
+	gets(pDados.nome);
+
 	printf("Digite o endereço do cliente:");
-	scanf("%s", &pDados.endereco);
-	
-	//getchar(pMunicipal.data);
+	gets(pDados.endereco);
 	
 	printf("Digite a data de nascimento:");
-	scanf("%d", &pDados.nascimento);
+	gets(pDados.nascimento);
 	
 	printf("Digite o RG do cliente: ");
-	scanf("%d", &pDados.rg);
+	gets(pDados.rg);
 	
 	printf("Digite o CPF do cliente: ");
-	scanf("%d", &pDados.cpf);
+	gets(pDados.cpf);
 
+	
 	//Para mostrar um registro
-	printf("Nome: %s  Data de nascimento: %d \n", pDados.nome, pDados.nascimento);
+	printf("Nome: %s  Data de nascimento: %s \n", pDados.nome, pDados.nascimento);
 	printf("Endereço: %s  \n", pDados.endereco);
-	printf("RG: %d  CPF: %d", pDados.cpf, pDados.rg);
+	printf("RG: %s  CPF: %s \n", pDados.cpf, pDados.rg);
 	
 
 	return 0;

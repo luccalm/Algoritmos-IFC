@@ -7,18 +7,19 @@ elemento anterior. */
 #include <math.h>
 
 int main(){
-	int N, i, multi;
+	int N, i;
+	int multi;
 
 	printf("Digite um número:");
 	scanf("%d", &N);
 
-	for(i = 0; i < 50; i++)
+	for(i = 1; i <= 50; i++)
 	{
-		multi = N * 3;
+		multi= N*3;
+		printf("O triplo [%d] do número %d é %d \n", i, N, multi);
 		N = multi;
-		printf("N[%d] vale: %d \n", i+1, N);
-		multi = 0;
 	}
+
 
 
 return 0;

@@ -23,9 +23,9 @@ int main(){
 				{
 				abaixo++;
 				}
-			
+			}
 			// Exatamente 1 pessoa:
-				}
+				
 		if(abaixo == 1) { printf("%d pessoa está abaixo do peso.", abaixo); }
 			
 			// Mais que 1 pessoa:
