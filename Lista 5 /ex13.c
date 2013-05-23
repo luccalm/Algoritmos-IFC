@@ -19,11 +19,6 @@ for(i = 0; i < 20; i++)
 	getchar();
 	}	
 
-
-	
-	//gets()
-//
-
 for(ialunos = 0; ialunos < 50 ; ialunos++)
 	{
 	valor = 0;
