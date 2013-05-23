@@ -1,8 +1,6 @@
-/* Escreva um vetor que leia um vetor G de 20 elementos caracter que representa o gabarito
-de uma prova. A seguir, para cada um dos 50 alunos da turma, leia o vetor de
-respostas (R) do aluno e conte o número de acertos. Mostre o no de acertos do aluno
-e uma mensagem APROVADO, se a nota for maior ou igual a 6; e mostre uma
-mensagem de REPROVADO, caso contrário. */
+/*16) Escrever um algoritmo que lê 2 vetores de tamanho 10. Crie, a seguir, um vetor S de
+20 posições que contenha os elementos dos outros 2 vetores em ordem crescente.
+Obs.: copie primeiro os valores para o vetor S para depois ordená-los */
 
 #include <stdio.h>
 #include <stdlib.h>
