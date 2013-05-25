@@ -14,28 +14,24 @@ primeiros termos da série: S = 1! + 2! + 3! + 4! + 5! + ... */
 #include <math.h>
 
 int main(){
-	int n, i, k = 1;
-	int soma = 0, permutacao = 1;
+	int n, i, k;
+	int soma = 0, permutacao;
 
 	printf("Digite um número N:");
 	scanf("%d", &n);
 
 	for(i = 1; i <= n; i++)
 		{
-			while(k < i)
+		permutacao = 1;
+		k = 1;
+
+			while(k <= i)
 				{
-				permutacao = permutacao + (permutacao * k);	
+				permutacao = permutacao * k;	
 				k++;
 				}	
 		
-		//Mostrar as permutações (Apenas para teste):
-		printf("%d! = [%d]\n", i, permutacao);
-
 		soma = soma + permutacao;
-		
-		//Reseto as variáveis para a próxima permutação:
-		permutacao = 1;
-		k = 1;
 		}
 
 		printf("A soma dos %d primeiros termos é %d \n", n, soma);
