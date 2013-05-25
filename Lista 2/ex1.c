@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-//
 /* Tal qual a série de Finonacci, a série de Ricci é calculada somando os dois termos
 anteriores. O que difere as duas séries é que a de Ricci os dois valores iniciais são
 fornecidos e poderão ser quais números. Ex. {5, 9} 14, 23, 37, 60, 97 . . . Baseado
 nisto, faça um algoritmo que calcule os “n” termos da série de Ricci.
 */
-//
 int main(){
 	int num1, num2, num3, n;
 
