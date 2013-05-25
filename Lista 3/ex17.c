@@ -9,56 +9,51 @@ dos dois vetores anteriores ordenados de maneira decrescente.
 #include <math.h>
 
 int main(){
-	int A[10], B[10], C[10], D[10], i, j, valorA, valorB;
+	int A[10], B[10], C[20], i, j = 10, troca, temporario;
 
+
+	//Insere valores para o vetor A[10]:
 	for(i = 0; i < 10; i++)
 	{
 		printf("Digite A[%d]:", i+1);
 		scanf("%d", &A[i]);
 	}
 
+	//Insere valores para o vetor B[10]:
 	for(i = 0; i < 10; i++)
 	{
 		printf("Digite B[%d]:", i+1);
 		scanf("%d", &B[i]);
 	}
 
-		for(i = 0; i < 10; i++)
-	{
-		valorA = 0;
-		for(j = 0; j < 10; j++)
-		{
-			if(A[i] > A[j])
-			{
-			valorA++; 
-			}
-		}
-
-		C[valorA] = A[i];
-	}
-
-		for(i = 0; i < 10; i++)
-	{
-		valorB = 0;
-		for(j = 0; j < 10; j++)
-		{
-			if(B[i] > B[j])
-			{
-			valorB++; 
-			}
-		}
-
-		D[valorB] = B[i];
-	}
-
+	//Preenche um terceiro vetor com os valores dos vetores A e B
 	for(i = 0; i < 10; i++)
 	{
-		printf("A[%d] \n", C[valorA]);
+	C[i] = A[i];
+	C[j] = B[i];
+	j++;
 	}
-	
-	for(i = 0; i < 10; i++)
+
+	troca = 1;
+
+	while(troca) {
+	troca = 0;
+		for(i = 0; i < 19; i++)
+			{
+			if(C[i] < C[i+1])
+				{
+				temporario = C[i];
+				C[i] = C[i+1];
+				C[i+1] = temporario;
+				troca = 1;
+				}	
+			}	
+	}
+
+	for(i = 0; i < 20; i++)
 	{
-		printf("B[%d] \n", D[valorB]);
+		printf("[%d]", C[i]);
+		printf("\n");
 	}
 
 	return 0;

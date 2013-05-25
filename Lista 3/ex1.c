@@ -9,24 +9,22 @@ pares.
 int main(){
 	int N[20], i;
 
-	for(i = 1; i <= 20; i++)
+	for(i = 0; i < 20; i++)
 	{
-		printf("Digite N[%d]:", i);
+		printf("Digite N[%d]:", i+1);
 		scanf("%d", &N[i]);
 	}
 
 
-
-	printf("Os vetores: \n");
-	for(i = 1; i <= 20; i++)
+	printf("Os valores pares são: \n");
+	for(i = 0; i < 20; i++)
 	{
 		if(N[i] % 2 == 0)
 		{
-			printf("N[%d] (Valor: %d) \n", i, N[i]);
+			printf("[%d]\n", N[i]);
 		}
 
 	}
-	printf("São pares. \n");
 
 return 0;
 }

@@ -8,15 +8,15 @@
 int main(){
 	int N[10], i;
 
-	for(i = 1; i <= 10; i++)
+	for(i = 0; i < 10; i++)
 	{
-		printf("Digite N[%d]:", i);
+		printf("Digite N[%d]:", i+1);
 		scanf("%d", &N[i]);
 	}
 
 
 	printf("Os vetores: \n");
-	for(i = 1; i <= 10; i++)
+	for(i = 0; i < 10; i++)
 	{
 		if(N[i] % 2 != 0)
 		{

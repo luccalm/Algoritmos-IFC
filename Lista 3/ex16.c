@@ -28,7 +28,7 @@ int main(){
 	
 	for(i = 0; i < 10; i++)
 	{
-		printf("A multiplicação de A[%d] por B[%d] é:[%d] \n", i, i, C[i]);
+		printf("A multiplicação de A[%d] por B[%d] é:[%d] \n", i+1, i+1, C[i]);
 	}
 
 	return 0;

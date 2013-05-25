@@ -9,7 +9,7 @@ pares.
 int main(){
 	int N[20], i;
 
-	for(i = 1; i <= 20; i++)
+	for(i = 0; i < 20; i++)
 	{
 		printf("Digite N[%d]:", i);
 		scanf("%d", &N[i]);
@@ -18,7 +18,7 @@ int main(){
 
 
 	printf("Os vetores: \n");
-	for(i = 1; i <= 20; i++)
+	for(i = 0; i < 20; i++)
 	{
 		if(N[i] % 2 == 0)
 		{

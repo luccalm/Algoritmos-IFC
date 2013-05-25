@@ -14,6 +14,7 @@ int main(){
 	}
 
 
+	printf("Ordem:\n");
 	for(i = 0; i < 6; i++)
 	{
 		printf("N[%d] = %d \n", i+1, N[i]);
@@ -21,7 +22,6 @@ int main(){
 	}
 
 	printf("Ordem inversa: \n");
-
 	for(i = 0; i < 6; i++)
 	{
 		printf("N[%d] = %d \n", i+1, V[i]);

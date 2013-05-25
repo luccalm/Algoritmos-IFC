@@ -16,7 +16,7 @@ int main(){
 	for(i = 1; i <= 50; i++)
 	{
 		multi= N*3;
-		printf("O triplo [%d] do número %d é %d \n", i, N, multi);
+		printf("O triplo do número %d é %d \n", i, N, multi);
 		N = multi;
 	}
 
