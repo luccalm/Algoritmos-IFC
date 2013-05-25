@@ -1,10 +1,10 @@
 /* 8) Que lê uma matriz M (6, 6) e calcule:
 OK a. Soma dos elementos da diagonal principal;
-OK b. Soma dos elementos da diagonal secundária;
+b. Soma dos elementos da diagonal secundária;
 OK c. Soma dos elementos acima da diagonal principal;
 OK d. Soma dos elementos abaixo da diagonal principal;
-OK e. Soma dos elementos acima da diagonal secundária;
-OK f. Soma dos elementos abaixo da diagonal secundária; */
+e. Soma dos elementos acima da diagonal secundária;
+f. Soma dos elementos abaixo da diagonal secundária; */
 
 #include <stdio.h>
 #include <stdlib.h>
