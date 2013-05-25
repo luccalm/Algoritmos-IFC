@@ -19,7 +19,7 @@ int main(){
 			scanf("%d", &nNumero);		
 		} 
 
-		printf("A soma dos números é %d. A quantidade é %d \n", soma, qnt);
+		printf("A soma dos números é %d. A quantidade é %d \n e a média é %d", soma, qnt, soma/qnt);
 
 
 	return 0;

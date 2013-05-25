@@ -18,9 +18,7 @@ int main(){
 
 		while(n > 0)
 		{
-			printf("Digite o %dº número:", i);
-			scanf("%d", &num2);
-			soma = soma + num2;
+			soma = soma + i;
 			i++;
 			n--;
 		}

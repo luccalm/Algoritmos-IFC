@@ -14,13 +14,13 @@
 
 
 int main(){
-	int num1, n=2;
+	int num1, n=1;
 
 
 	printf("Digite um número: ");
 	scanf("%d", &num1);
 	
-	while(n < num1)
+	while(n <= num1)
 	{
 		if(num1 % n == 0)
 		{

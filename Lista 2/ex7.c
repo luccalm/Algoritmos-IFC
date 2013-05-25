@@ -12,10 +12,10 @@ c. Enquanto (while). */
 int main(){
 	int tab, i, num = 1, num2 = 1;
 	
-	printf("Escolha um número para a tabuada");
+	printf("Escolha um número para a tabuada:");
 	scanf("%d", &tab);
 
-		printf("Método FOR: \n");
+		printf("\nMétodo FOR: \n");
 	for(i = 1; i <= 10; i++)
 	{
 		printf("%d por %d é: %d. \n", tab, i, tab*i);	

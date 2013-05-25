@@ -13,7 +13,7 @@ que para existir esta série serão necessários pelo menos três termos.
 
 int main(){
 
-int num1, num2, n, A[50], i;
+int num1, num2, n, i, valorTermo;
 
 printf("Digite o primeiro número:");
 scanf("%d", &num1);
@@ -29,24 +29,23 @@ if(n < 3)
 		printf("A quantidade mínima de termos é 3.\n");
 	}
 
-	for(i = 3; i < 10; i++)
-		{
-		if(i % 2 == 0)
-			{
-			A[i] = (num1 -1) - (num2 - 2);	
-			printf("%d \n", A[i]);
-			num1 = num2;
-			num2 = A[i];
-			}
-		else
-			{
-			A[i] = (num1 -1) + (num2 - 2);	
-			printf("%d \n", A[i]);
-			num1 = num2;
-			num2 = A[i];
-			}
-		}
+printf("[%d]\n", num1);
+printf("[%d]\n", num2);
 
+for(i = 3; i < n; i++)  //Como a quantidade de termos mínima é 3 o i começa com o valor 3 (mínimo)
+	{
+	if(i % 2 == 0)
+		{
+		valorTermo = num2 - num1; //para i par.	
+		}
+	else 
+		{
+		valorTermo = num2 + num1; //para i impar
+		}
+	printf("[%d]\n",valorTermo);
+	num1 = num2; 
+	num2 = valorTermo;
+	}
 
 return 0;
 }

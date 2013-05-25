@@ -7,13 +7,13 @@ centígrados que variem de 50 a 150 de 1 em 1. */
 #include <math.h>
 
 int main(){
-	int fah = 50;
-	double cen;
+	int fah = 50; 
+	int cen; //Variável que armazena o valor da conversão (em celsius).
 	
 	while(fah <= 150)
 	{
 	cen = (5.0/9.0)*(fah - 32);
-	printf("%d fahrenheit são %lf graus centígrados. \n", fah, cen);	
+	printf("%d fahrenheit são %d graus centígrados. \n", fah, cen); 
 	fah++;
 	}
 

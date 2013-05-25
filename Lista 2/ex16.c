@@ -5,7 +5,7 @@ primeiros termos da série: S = 1! + 2! + 3! + 4! + 5! + ... */
 	Segundo termo: 1*2 == 2
 	Terceiro termo: 1*2*3 == 6
 	Quarto termo: 1*2*3*4 == 24 
-	Soma: 32
+	Soma: 33
 */
 
 
@@ -14,10 +14,30 @@ primeiros termos da série: S = 1! + 2! + 3! + 4! + 5! + ... */
 #include <math.h>
 
 int main(){
-	int nTermos;
+	int n, i, k = 1;
+	int soma = 0, permutacao = 1;
 
-	printf("Digite o termo que gostaria de saber:");
-	scanf("%d", &nTermos);
+	printf("Digite um número N:");
+	scanf("%d", &n);
+
+	for(i = 1; i <= n; i++)
+		{
+			while(k < i)
+				{
+				permutacao = permutacao + (permutacao * k);	
+				k++;
+				}	
 		
+		//Mostrar as permutações (Apenas para teste):
+		printf("%d! = [%d]\n", i, permutacao);
+
+		soma = soma + permutacao;
+		
+		//Reseto as variáveis para a próxima permutação:
+		permutacao = 1;
+		k = 1;
+		}
+
+		printf("A soma dos %d primeiros termos é %d \n", n, soma);
 return 0;
 }
