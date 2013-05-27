@@ -5,11 +5,12 @@ vetor, retirando os valores nulos e negativos, colocando o resultado em um vetor
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define QTE 100 
+#define QTE 5 
 
 int main(){
 
 int i, A[QTE], valorB = 0, valorvetorB = 0;
+int *vetB;
 
 for(i = 0; i < QTE; i++)
 	{
@@ -26,22 +27,25 @@ for(i = 0; i < QTE; i++)
 	}
 
 int B[valorvetorB];
+vetB = (int*) malloc(valorvetorB * sizeof(int));
 
 for(i = 0; i < QTE; i++)
-	{
+{
 	if(A[i] > 0)
 		{
-		B[valorB] = A[i];
+		vetB[valorB] = A[i];
 		valorB++;	
 		}	
-	}
+}
 
 printf("Vetor compactado:");
 for(i = 0; i < valorB; i++)
 	{
-	printf("[%d]", B[i]);	
+	printf("[%d]", vetB[i]);	
 	}
 printf("\n");	
+
+free(vetB);
 
 return 0;
 
