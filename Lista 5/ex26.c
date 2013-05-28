@@ -10,8 +10,8 @@ assim por diante. Mostre o resultado da soma final. */
 
 int main(){
 
-int A[QTE], B[QTE], valor[QTE], j = QTE - 1, valorFinal = 0;
-int i;
+int A[QTE], B[QTE], valor[QTE], i, valorFinal = 0;
+int j = QTE - 1; //Define J como o último valor do vetor.
 
 	//Inserir valores para o vetor de A
 	for(i = 0; i < QTE; i++)
@@ -27,13 +27,11 @@ int i;
 	scanf("%d", &B[i]);	
 	}
 
-	//Realiza a subtração de A[i] por B[j] (j = QTE - 1)
+	//Realiza a subtração de A[i] por B[j]
 	for(i = 0; i < QTE; i++)
 	{
 	valor[i] = A[i] - B[j];
 	j--;
-	printf("Valor de:%d \n", valor[i]);
-
 	}
 
 	//Realiza a soma dos valores do vetor "valor"
@@ -42,7 +40,7 @@ int i;
 	valorFinal = valorFinal + valor[i];
 	}
 
-	printf("Valor da soma: %d", valorFinal);
+	printf("Valor da soma: %d\n", valorFinal);
 return 0;
 
 }
