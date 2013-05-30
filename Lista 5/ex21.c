@@ -30,6 +30,7 @@ case 1:
 	{
 	printf("[%d]", A[i]);	
 	}
+	printf("\n");
 break;
 
 case 2:
@@ -37,6 +38,7 @@ case 2:
 	{
 	printf("[%d]", A[i]);	
 	}
+	printf("\n");
 break;
 
 }

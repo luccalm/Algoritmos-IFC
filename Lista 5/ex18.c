@@ -5,7 +5,7 @@ contenha todos os números primos de K. Escreva o vetor P.
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define TAM 15 
+#define TAM 15
 
 int main(){
 
@@ -24,7 +24,7 @@ for(i = 0; i < TAM; i++)
 	divisor = 1;
 	while(divisor <= K[i])
 		{
-		if(K[i] % 2 == 0)
+		if(K[i] % divisor == 0)
 			{valorP++;}	
 		divisor++;
 		}

@@ -12,7 +12,11 @@ aparece X
 
 int main(){
 
-int A[LIN][COL], i, j, valor, qntIgual;
+int A[LIN][COL], i, j, qntIgual = 0;
+int iLinha, iColuna;
+int numeros[LIN*COL];
+int valor;
+int ColunaComparar;
 
 	//Inserir valores para a matriz:
 	for(i = 0; i < LIN; i++)
@@ -25,7 +29,7 @@ int A[LIN][COL], i, j, valor, qntIgual;
 	}
 
 	//Mostrar a matriz:
-	printf("Matriz:\n");
+	printf("\nMatriz:\n");
 	for(i = 0; i < LIN; i++)
 	{
 		for(j = 0; j < COL; j++)
@@ -34,15 +38,28 @@ int A[LIN][COL], i, j, valor, qntIgual;
 		}
 		printf("\n");
 	}
-	
-	j = 0;
+	printf("\n");
 
-	//Comparar elementos:
-	
-//A[0][0] > Comparar com  A[0][1] , A[1][0] , A[1][1]
-//A[0][1] > Comparar com A[0][0], A[1][0], A[1][1]
-
-
+	for(i = 0; i < LIN; i++)
+	{	
+		for(j = 0; j < COL; j++)
+		{
+			ColunaComparar = 1;
+			valor = 0;
+			for(iLinha = 0; iLinha < LIN; iLinha++)
+			{
+				for(iColuna = ColunaComparar; iColuna < COL; iColuna++)
+				{
+					if(A[i][j] = A[iLinha][iColuna])
+					{
+					valor++;
+					}
+				}
+			ColunaComparar = 0;
+			}
+		printf("%d - %d \n", A[i][j], valor);
+		}	
+	}
 
 return 0;
 }

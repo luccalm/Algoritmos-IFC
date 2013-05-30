@@ -6,7 +6,7 @@ assim por diante. Mostre o resultado da soma final. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define QTE 5
+#define QTE 50
 
 int main(){
 

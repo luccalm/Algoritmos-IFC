@@ -7,7 +7,7 @@ quantos valores pares existem no vetor. */
 
 int main(){
 
-int A[20], i, b = 0;
+int A[20], i, qntPares = 0;
 
 // Declaração valores:
 
@@ -17,12 +17,12 @@ for(i = 0; i < 20; i++)
 	scanf("%d", &A[i]);
 		if(A[i] % 2 == 0)
 			{
-			b++;
+			qntPares++;
 			}
 	}
 //
 
-	printf("A quantidade de valores pares é: [%d] \n", b);	
+	printf("A quantidade de valores pares é: [%d] \n", qntPares);	
 	
 
 return 0;

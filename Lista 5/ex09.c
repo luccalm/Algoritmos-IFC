@@ -1,9 +1,5 @@
-/*
-Exercício: 05
-Data: 27/04/2013
-Autor: Elton Baroncello
-Descrição: Leia um A vetor (10) de inteiros. Ordene, a seguir, os elementos de A em ordem crescente e escreva o vetor ordenado.
-*/
+// Leia um A vetor (10) de inteiros. Ordene, a seguir, os elementos de A em ordem crescente e escreva o vetor ordenado.
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -17,7 +13,6 @@ printf("Digite um valor para A[%i]: ", i);
 scanf("%i", &a[i]);
 }
 
-// passa por cada indice [0=5,1=3,2=2,3=1,4=6,5=8,6=4,7=7,8=6,9=5]
 troca=1;
 while(troca){
 troca=0;

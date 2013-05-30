@@ -22,8 +22,6 @@ int A[QTE], B[QTE], n = 1, valorB = 0, fatorial, i;
 	{
 	
 	if(A[i] > 0) {
-	
-	
 	fatorial = 1;
 	n = 1;
 		while(n <= A[i])

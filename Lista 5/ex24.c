@@ -4,7 +4,7 @@ seus elementos pelo maior valor do vetor. Mostre o vetor após os cálculos. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define QTE 500 
+#define QTE 500
 
 int main(){
 
