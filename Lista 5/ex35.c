@@ -7,8 +7,8 @@ aparece X
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define LIN 2
-#define COL 2
+#define LIN 3
+#define COL 3
 
 int main(){
 
@@ -16,7 +16,8 @@ int A[LIN][COL], i, j, qntIgual = 0;
 int iLinha, iColuna;
 int numeros[LIN*COL];
 int valor;
-int ColunaComparar;
+int qntNumeros = 0;
+int iverificar;
 
 	//Inserir valores para a matriz:
 	for(i = 0; i < LIN; i++)
@@ -44,21 +45,33 @@ int ColunaComparar;
 	{	
 		for(j = 0; j < COL; j++)
 		{
-			ColunaComparar = 1;
+		
+		for(iverificar = 0; iverificar < qntNumeros; iverificar++)
+			{
+			if(numeros[qntNumeros] = A[i][j]) { break; }	
+			}
+			
+			if(iverificar < qntNumeros)
+			{
+			continue;
+			}
+
 			valor = 0;
 			for(iLinha = 0; iLinha < LIN; iLinha++)
 			{
-				for(iColuna = ColunaComparar; iColuna < COL; iColuna++)
+				for(iColuna = 0; iColuna < COL; iColuna++)
 				{
-					if(A[i][j] = A[iLinha][iColuna])
+					if(A[i][j] == A[iLinha][iColuna])
 					{
 					valor++;
 					}
 				}
-			ColunaComparar = 0;
 			}
-		printf("%d - %d \n", A[i][j], valor);
+		numeros[qntNumeros] = A[i][j];
+		qntNumeros++;	
+		if(valor > 1) { printf("O número %d aparece %d vez(es). \n", A[i][j], valor); }
 		}	
+	
 	}
 
 return 0;
